@@ -1,0 +1,383 @@
+/*CSS 3 Ramanpreet Chand*/
+
+html body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* SIDE NAVIGATION */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  position: fixed;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+  color: #f1f1f1;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px !important;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+}
+
+/* HEADER */
+.header--background--color {
+	height: 8em;
+	background-color: #7cd2d1
+}
+
+.header--container {
+  position: absolute;
+	background-color: #7cd2d1;
+	width: 100%;
+	height: 40em;
+	transform: skewY(-8deg);
+}
+
+.header--title--card, .header--title--card--subheading, .header--title--card--subheading--icons {
+	transform: skewY(8deg);
+	text-align: center;
+	color: #fff;
+}
+
+.header--title--card {
+  margin-top: 1em;
+	font-size: 42px;
+	padding-top: 3em;
+  padding-bottom: .5em;
+}
+
+.header--title--card--subheading {
+	font-size: 20px;
+}
+
+.header--title--card--subheading--icons ul {
+  list-style-type: none; 
+  padding: 2em;
+}
+
+.header--title--card--subheading--icons ul li {
+  display: inline-block;
+  font-size: 36px;
+  padding: 0 .25em;
+}
+
+/* MAIN SECTION */
+
+.header--title {
+  font-size: 32px;
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* MAIN -- ABOUT SECTION */
+.about {
+  margin-top: 25em; /*Increments of 5em*/
+	padding: 12em 13em 5em;
+}
+
+.about--section--description {
+  font-size: 14px;
+  text-align: justify;
+
+  margin-top: 2em;
+
+  padding: 1em;
+}
+
+.about span {
+  font-size: 24px;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+.about ul{
+  list-style-type: none;
+  text-align: center;
+  padding: 1em 0;
+
+  width: 100%;
+}
+
+.about ul li {
+  display: inline-block;
+  padding: 0 .5em;
+  font-size: 36px;
+}
+
+/* MAIN -- EDUCATION SECTION */
+
+.education {
+  margin-top: 5em; /*Increments of 5em*/
+  text-align: center;
+}
+
+.supporting--container--education {
+  position: absolute;
+
+  background-color: #eeeeee;
+
+  width: 100%;
+  height: auto;
+
+  padding-top: 4em;
+  padding-bottom: 8em;
+
+  transform: skewY(-8deg);
+}
+
+.education--text {
+  transform: skewY(8deg);
+  color: #000;
+}
+
+.education i {
+  font-size: 46px;
+}
+
+.education--card {
+	padding: 1.5em 0;
+}
+
+/* MAIN -- BLOG SECTIONS */
+
+.blog {
+  margin-top: 60em;
+  margin-bottom: 5em;
+}
+
+.blog--card {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.blog--text {
+  text-align: justify;
+  padding-top: 1em;
+}
+
+/* MAIN -- PROJECTS SECTIONS */
+
+.projects {
+  margin-top: 10em; /*Increments of 5em*/
+}
+
+.supporting--container--projects {
+  position: relative;
+
+  background-color: #708090;
+
+  width: 100%;
+  height: auto;
+
+  padding-top: 4em;
+  padding-bottom: 8em;
+
+  transform: skewY(8deg);
+}
+
+.projects--text {
+  transform: skewY(-8deg);
+  color: #fff;
+}
+
+.bottom--card {
+  text-align: center;
+
+  border: 3px solid #fff;
+  height: auto;
+
+  padding-top: 2em;
+  padding-bottom: 1em;
+
+  margin-bottom: 2em;
+}
+
+.card--title {
+  width: 100%;
+  height: auto;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 28px;
+  text-decoration: underline;
+
+  transition: opacity .25s ease-in-out;
+}
+
+.bottom-card:hover {
+  visibility: hidden;
+}
+
+.top--card {
+  position: relative;
+
+  width: 100%;
+  height: auto;
+  padding: 1em 2em;
+
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+  color: #fff;
+}
+
+.top--card:hover {
+  opacity: .9;
+}
+
+.card--title--subtitle, .card--title--subtitle--description {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card--title--subtitle {
+  font-size: 20px;
+  font-weight: bold;
+
+  letter-spacing: 5px;
+
+  padding-bottom: 1em;
+}
+
+.card--title--subtitle--description {
+  font-size: 14px;
+  padding-bottom: 1.5em
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 3em;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 64em) {
+
+  /* MAIN - ABOUT SECTION */
+  .about {
+  	width: 100%
+  	height: auto;
+  	margin-top: 30em;
+  	padding: 5em 3em 0;
+  }
+
+  /* MAIN - PROJECTS SECTION */
+
+  .blog {
+  	margin-top: 75em;
+  }
+  .
+}
+
+@media only screen and (max-width: 37.5em) {
+
+  /* SIDE NAVIGATION */
+  
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+
+  /* MAIN */
+
+  .header--container {
+    padding: 0 .5em;
+  }
+
+  .header--title--card {
+    padding: 1em 0;
+  }
+
+  .header--title--card--subheading--icons {
+    padding: 0 1em;
+  }
+
+  .header--title {
+    font-size: 28px;
+  }
+
+  /* MAIN - ABOUT SECTION */
+
+  .about {
+  	width: 100%
+  	height: auto;
+  	
+    margin-top: 35em;
+
+  	padding: 0 .95em;
+  }
+
+  /* MAIN - EDUCATION SECTION */
+
+  .education {
+  	width: 100%;
+  	height: auto;
+  }
+
+  .supporting--container--education {
+  	height: auto;
+  	padding: 3em 0;
+  }
+
+  /* MAIN - PROJECTS SECTION */
+
+  .blog {
+  	margin-top: 78em;
+  }
+  .blog--card {
+    margin-bottom: 2em;
+  }
+
+  .projects {
+    margin-top: 5em;
+  }
+
+  .card--title {
+  	font-size: 24px;
+  }
+
+  .card--title--subtitle {
+  	font-size: 20px;
+  	letter-spacing: 3px;
+  }
+}
